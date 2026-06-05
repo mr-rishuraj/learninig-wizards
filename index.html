@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Wizards - English Classes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+</head>
+<body class="bg-gradient-to-br from-yellow-100 via-pink-100 to-cyan-100 font-comic halftone relative">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b-4 border-purple-400 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="text-3xl">✨</div>
+                <h1 class="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+                    Learning Wizards
+                </h1>
+            </div>
+            <button class="md:hidden text-2xl" id="menuBtn">☰</button>
+            <div class="hidden md:flex gap-6 text-sm md:text-base font-semibold">
+                <a href="#home" class="hover:text-purple-600 transition">Home</a>
+                <a href="#programs" class="hover:text-purple-600 transition">Programs</a>
+                <a href="#about" class="hover:text-purple-600 transition">About</a>
+                <a href="#contact" class="hover:text-pink-600 transition">Contact</a>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t-2 border-purple-300 p-4 space-y-2">
+            <a href="#home" class="block py-2 hover:text-purple-600">Home</a>
+            <a href="#programs" class="block py-2 hover:text-purple-600">Programs</a>
+            <a href="#about" class="block py-2 hover:text-purple-600">About</a>
+            <a href="#contact" class="block py-2 hover:text-pink-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-12 pb-20 px-4 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <!-- Left Side - Text -->
+                <div class="relative z-10">
+                    <div class="inline-block mb-4 bg-yellow-300 rounded-full px-6 py-2 border-4 border-black transform -rotate-3 starburst">
+                        <span class="text-sm font-black text-black comic-title">🎉 WELCOME TO THE MAGIC!</span>
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-black mb-6 leading-tight comic-title">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-600 to-red-600">
+                            UNLOCK YOUR
+                        </span>
+                        <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600">
+                            ENGLISH POWERS!
+                        </span>
+                    </h2>
+                    <div class="speech-bubble mb-6 animate-pop">
+                        <p class="text-gray-800 text-lg font-bold">
+                            🧙‍♂️ Join the magical world where learning becomes an ADVENTURE!
+                        </p>
+                    </div>
+                    <div class="flex gap-4 flex-wrap">
+                        <button class="px-8 py-4 bg-gradient-to-r from-red-500 to-pink-500 text-white font-black rounded-full hover:shadow-lg transform hover:scale-110 transition duration-300 comic-border text-lg animate-squish">
+                            ✨ START LEARNING ✨
+                        </button>
+                        <button class="px-8 py-4 bg-yellow-300 border-4 border-black text-black font-black rounded-full hover:shadow-lg transform hover:scale-110 transition duration-300 comic-border text-lg">
+                            📚 LEARN MORE →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Side - Illustration Area -->
+                <div class="relative h-80 md:h-96 flex items-center justify-center">
+                    <!-- Wobbling circles -->
+                    <div class="absolute w-56 h-56 bg-gradient-to-br from-yellow-300 to-yellow-200 border-4 border-black rounded-full opacity-80 animate-bounce-comic" style="animation-delay: 0s;"></div>
+                    <div class="absolute w-48 h-48 bg-gradient-to-br from-pink-400 to-pink-300 border-4 border-black rounded-full opacity-70 animate-bounce-comic" style="top: 30px; right: 20px; animation-delay: 0.2s;"></div>
+                    <div class="absolute w-40 h-40 bg-gradient-to-br from-blue-300 to-cyan-300 border-4 border-black rounded-full opacity-60 animate-bounce-comic" style="top: 80px; right: 80px; animation-delay: 0.4s;"></div>
+
+                    <!-- Main wizard character -->
+                    <div class="absolute text-9xl z-20 animate-float drop-shadow-2xl">🧙‍♂️</div>
+
+                    <!-- Comic effect stars around wizard -->
+                    <div class="absolute text-5xl z-10 animate-wiggle" style="top: 10px; left: 20px;">⭐</div>
+                    <div class="absolute text-4xl z-10 animate-wiggle" style="bottom: 30px; right: 10px; animation-delay: 0.3s;">✨</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-16 px-4 relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <!-- Comic Book Title -->
+                <div class="inline-block bg-red-500 px-8 py-4 border-4 border-black rounded-lg mb-6 transform -rotate-2 comic-border">
+                    <h2 class="text-4xl md:text-5xl font-black text-white comic-title">
+                        OUR MAGICAL PROGRAMS
+                    </h2>
+                </div>
+                <p class="text-gray-800 text-xl font-bold">Choose your learning spell and embark on your journey! ✨</p>
+
+                <!-- Decorative comic elements -->
+                <div class="absolute top-10 left-5 text-6xl animate-wiggle">💥</div>
+                <div class="absolute top-20 right-10 text-5xl animate-bounce-comic">⚡</div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-container">
+                <!-- Program 1 -->
+                <div class="group bg-gradient-to-br from-blue-400 to-blue-200 p-8 hover:shadow-2xl transform hover:scale-105 transition duration-300 cursor-pointer stagger-item comic-panel hand-drawn border-4 border-black">
+                    <div class="text-7xl mb-4 animate-bounce-comic">📚</div>
+                    <h3 class="text-2xl font-black text-blue-900 mb-3 comic-title">GRAMMAR WIZARDRY</h3>
+                    <p class="text-blue-900 font-bold mb-6 leading-relaxed">
+                        Master the magical rules! Tenses, structures, and more—made FUN! 🔮
+                    </p>
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center gap-2 font-bold">
+                            <span class="text-2xl">⚡</span>
+                            <span class="text-blue-900">Tenses & Structures</span>
+                        </div>
+                        <div class="flex items-center gap-2 font-bold">
+                            <span class="text-2xl">⚡</span>
+                            <span class="text-blue-900">Parts of Speech</span>
+                        </div>
+                        <div class="flex items-center gap-2 font-bold">
+                            <span class="text-2xl">⚡</span>
+                            <span class="text-blue-900">Common Errors</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-blue-600 text-white font-black py-3 rounded-xl hover:bg-blue-700 transition transform hover:scale-110 comic-border">
+                        EXPLORE →
+                    </button>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="group bg-gradient-to-br from-pink-400 to-pink-200 p-8 hover:shadow-2xl transform hover:scale-105 transition duration-300 cursor-pointer stagger-item comic-panel hand-drawn border-4 border-black">
+                    <div class="text-7xl mb-4 animate-bounce-comic" style="animation-delay: 0.2s;">🎤</div>
+                    <h3 class="text-2xl font-black text-pink-900 mb-3 comic-title">SPEAKING SPELLS</h3>
+                    <p class="text-pink-900 font-bold mb-6 leading-relaxed">
+                        Speak with CONFIDENCE! Pronunciation, conversations, public speaking! 🗣️
+                    </p>
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center gap-2 font-bold">
+                            <span class="text-2xl">⚡</span>
+                            <span class="text-pink-900">Pronunciation</span>
+                        </div>
+                        <div class="flex items-center gap-2 font-bold">
+                            <span class="text-2xl">⚡</span>
+                            <span class="text-pink-900">Conversations</span>
+                        </div>
+                        <div class="flex items-center gap-2 font-bold">
+                            <span class="text-2xl">⚡</span>
+                            <span class="text-pink-900">Confidence Boost</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-pink-600 text-white font-black py-3 rounded-xl hover:bg-pink-700 transition transform hover:scale-110 comic-border">
+                        EXPLORE →
+                    </button>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="group bg-gradient-to-br from-green-400 to-green-200 p-8 hover:shadow-2xl transform hover:scale-105 transition duration-300 cursor-pointer stagger-item comic-panel hand-drawn border-4 border-black">
+                    <div class="text-7xl mb-4 animate-bounce-comic" style="animation-delay: 0.4s;">📖</div>
+                    <h3 class="text-2xl font-black text-green-900 mb-3 comic-title">READING REALM</h3>
+                    <p class="text-green-900 font-bold mb-6 leading-relaxed">
+                        Dive into incredible worlds! Comprehension & vocabulary building! 📚
+                    </p>
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center gap-2 font-bold">
+                            <span class="text-2xl">⚡</span>
+                            <span class="text-green-900">Comprehension</span>
+                        </div>
+                        <div class="flex items-center gap-2 font-bold">
+                            <span class="text-2xl">⚡</span>
+                            <span class="text-green-900">Vocabulary Power</span>
+                        </div>
+                        <div class="flex items-center gap-2 font-bold">
+                            <span class="text-2xl">⚡</span>
+                            <span class="text-green-900">Literature Fun</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-green-600 text-white font-black py-3 rounded-xl hover:bg-green-700 transition transform hover:scale-110 comic-border">
+                        EXPLORE →
+                    </button>
+                </div>
+
+                <!-- Program 4 -->
+                <div class="group bg-gradient-to-br from-yellow-400 to-yellow-200 p-8 hover:shadow-2xl transform hover:scale-105 transition duration-300 cursor-pointer stagger-item comic-panel hand-drawn border-4 border-black">
+                    <div class="text-7xl mb-4 animate-bounce-comic" style="animation-delay: 0.6s;">✏️</div>
+                    <h3 class="text-2xl font-black text-yellow-900 mb-3 comic-title">WRITING WORKSHOP</h3>
+                    <p class="text-yellow-900 font-bold mb-6 leading-relaxed">
+                        Write AMAZING stories! Essays, creative writing, and more! 📝
+                    </p>
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center gap-2 font-bold">
+                            <span class="text-2xl">⚡</span>
+                            <span class="text-yellow-900">Essay Writing</span>
+                        </div>
+                        <div class="flex items-center gap-2 font-bold">
+                            <span class="text-2xl">⚡</span>
+                            <span class="text-yellow-900">Creative Stories</span>
+                        </div>
+                        <div class="flex items-center gap-2 font-bold">
+                            <span class="text-2xl">⚡</span>
+                            <span class="text-yellow-900">Editing Skills</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-yellow-600 text-white font-black py-3 rounded-xl hover:bg-yellow-700 transition transform hover:scale-110 comic-border">
+                        EXPLORE →
+                    </button>
+                </div>
+
+                <!-- Program 5 -->
+                <div class="group bg-gradient-to-br from-purple-400 to-purple-200 p-8 hover:shadow-2xl transform hover:scale-105 transition duration-300 cursor-pointer stagger-item comic-panel hand-drawn border-4 border-black">
+                    <div class="text-7xl mb-4 animate-bounce-comic" style="animation-delay: 0.8s;">🎭</div>
+                    <h3 class="text-2xl font-black text-purple-900 mb-3 comic-title">DRAMA & DEBATE</h3>
+                    <p class="text-purple-900 font-bold mb-6 leading-relaxed">
+                        EXPRESS yourself on STAGE! Drama, debates & more! 🎬
+                    </p>
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center gap-2 font-bold">
+                            <span class="text-2xl">⚡</span>
+                            <span class="text-purple-900">Debate Skills</span>
+                        </div>
+                        <div class="flex items-center gap-2 font-bold">
+                            <span class="text-2xl">⚡</span>
+                            <span class="text-purple-900">Drama & Acting</span>
+                        </div>
+                        <div class="flex items-center gap-2 font-bold">
+                            <span class="text-2xl">⚡</span>
+                            <span class="text-purple-900">Public Speaking</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-purple-600 text-white font-black py-3 rounded-xl hover:bg-purple-700 transition transform hover:scale-110 comic-border">
+                        EXPLORE →
+                    </button>
+                </div>
+
+                <!-- Program 6 -->
+                <div class="group bg-gradient-to-br from-red-400 to-red-200 p-8 hover:shadow-2xl transform hover:scale-105 transition duration-300 cursor-pointer stagger-item comic-panel hand-drawn border-4 border-black">
+                    <div class="text-7xl mb-4 animate-bounce-comic" style="animation-delay: 1s;">🏆</div>
+                    <h3 class="text-2xl font-black text-red-900 mb-3 comic-title">EXAM EXCELLENCE</h3>
+                    <p class="text-red-900 font-bold mb-6 leading-relaxed">
+                        ACE your exams! Board exams, IELTS, TOEFL & more! 🎓
+                    </p>
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center gap-2 font-bold">
+                            <span class="text-2xl">⚡</span>
+                            <span class="text-red-900">Board Exams</span>
+                        </div>
+                        <div class="flex items-center gap-2 font-bold">
+                            <span class="text-2xl">⚡</span>
+                            <span class="text-red-900">IELTS/TOEFL</span>
+                        </div>
+                        <div class="flex items-center gap-2 font-bold">
+                            <span class="text-2xl">⚡</span>
+                            <span class="text-red-900">Mock Tests</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-red-600 text-white font-black py-3 rounded-xl hover:bg-red-700 transition transform hover:scale-110 comic-border">
+                        EXPLORE →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="relative h-64 md:h-80 flex items-center justify-center">
+                    <!-- Cartoon circles bouncing -->
+                    <div class="absolute w-52 h-52 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full opacity-70 animate-bounce-comic" style="animation-delay: 0s;"></div>
+                    <div class="absolute w-40 h-40 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-full opacity-60 animate-bounce-comic" style="animation-delay: 0.2s;"></div>
+                    <div class="absolute text-8xl z-10 animate-float">🌟</div>
+                </div>
+                <div>
+                    <div class="inline-block bg-orange-400 px-6 py-3 border-4 border-black rounded-lg mb-6 transform -rotate-1 comic-border">
+                        <h2 class="text-4xl font-black comic-title text-black">
+                            WHY LEARNING WIZARDS?
+                        </h2>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex gap-4 bg-blue-200 p-4 rounded-2xl border-4 border-black comic-panel">
+                            <div class="text-4xl flex-shrink-0">🎯</div>
+                            <div>
+                                <h3 class="font-black text-lg text-blue-900">PERSONALIZED LEARNING</h3>
+                                <p class="text-blue-800 font-semibold">Every student is unique - we match YOUR style!</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 bg-pink-200 p-4 rounded-2xl border-4 border-black comic-panel">
+                            <div class="text-4xl flex-shrink-0">👨‍🏫</div>
+                            <div>
+                                <h3 class="font-black text-lg text-pink-900">EXPERT INSTRUCTORS</h3>
+                                <p class="text-pink-800 font-semibold">Learn from experienced & passionate pros!</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 bg-green-200 p-4 rounded-2xl border-4 border-black comic-panel">
+                            <div class="text-4xl flex-shrink-0">🎨</div>
+                            <div>
+                                <h3 class="font-black text-lg text-green-900">FUN & INTERACTIVE</h3>
+                                <p class="text-green-800 font-semibold">Learning that's actually ENJOYABLE! 🎉</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 bg-red-200 p-4 rounded-2xl border-4 border-black comic-panel">
+                            <div class="text-4xl flex-shrink-0">📈</div>
+                            <div>
+                                <h3 class="font-black text-lg text-red-900">PROVEN RESULTS</h3>
+                                <p class="text-red-800 font-semibold">Students achieve & exceed expectations!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 px-4 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 relative overflow-hidden">
+        <!-- Comic explosion effects -->
+        <div class="absolute top-10 left-5 text-6xl animate-wiggle">💥</div>
+        <div class="absolute bottom-10 right-10 text-7xl animate-bounce-comic">⚡</div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="grid md:grid-cols-4 gap-6 text-center">
+                <div class="bg-yellow-300 p-6 border-4 border-black rounded-3xl comic-border transform hover:scale-110 transition">
+                    <div class="text-5xl font-black text-black mb-2 comic-title">500+</div>
+                    <p class="font-black text-black text-lg">HAPPY STUDENTS</p>
+                </div>
+                <div class="bg-cyan-300 p-6 border-4 border-black rounded-3xl comic-border transform hover:scale-110 transition">
+                    <div class="text-5xl font-black text-black mb-2 comic-title">50+</div>
+                    <p class="font-black text-black text-lg">EXPERT TEACHERS</p>
+                </div>
+                <div class="bg-lime-300 p-6 border-4 border-black rounded-3xl comic-border transform hover:scale-110 transition">
+                    <div class="text-5xl font-black text-black mb-2 comic-title">10+</div>
+                    <p class="font-black text-black text-lg">YEARS EXPERIENCE</p>
+                </div>
+                <div class="bg-orange-300 p-6 border-4 border-black rounded-3xl comic-border transform hover:scale-110 transition">
+                    <div class="text-5xl font-black text-black mb-2 comic-title">98%</div>
+                    <p class="font-black text-black text-lg">SUCCESS RATE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 relative">
+        <div class="max-w-2xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="inline-block bg-green-400 px-8 py-4 border-4 border-black rounded-2xl mb-4 transform rotate-2 comic-border">
+                    <h2 class="text-4xl font-black text-black comic-title">GET IN TOUCH! 📞</h2>
+                </div>
+                <p class="text-black text-xl font-bold">Ready for your magical learning journey? 🚀</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-pink-300 to-purple-300 rounded-3xl p-8 border-4 border-black comic-panel hand-drawn-2">
+                <form class="space-y-6" id="contactForm">
+                    <div>
+                        <label class="block font-black text-purple-900 mb-2 text-lg">YOUR NAME ✨</label>
+                        <input type="text" placeholder="Enter your magical name" class="w-full px-4 py-3 rounded-2xl border-4 border-black focus:border-purple-900 focus:outline-none font-bold">
+                    </div>
+                    <div>
+                        <label class="block font-black text-purple-900 mb-2 text-lg">EMAIL ADDRESS 📧</label>
+                        <input type="email" placeholder="your@email.com" class="w-full px-4 py-3 rounded-2xl border-4 border-black focus:border-purple-900 focus:outline-none font-bold">
+                    </div>
+                    <div>
+                        <label class="block font-black text-purple-900 mb-2 text-lg">WHICH PROGRAM? 🎯</label>
+                        <select class="w-full px-4 py-3 rounded-2xl border-4 border-black focus:border-purple-900 focus:outline-none font-bold">
+                            <option>Choose a program...</option>
+                            <option>Grammar Wizardry</option>
+                            <option>Speaking Spells</option>
+                            <option>Reading Realm</option>
+                            <option>Writing Workshop</option>
+                            <option>Drama & Debate</option>
+                            <option>Exam Excellence</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block font-black text-purple-900 mb-2 text-lg">MESSAGE 💬</label>
+                        <textarea placeholder="Tell us about yourself..." rows="4" class="w-full px-4 py-3 rounded-2xl border-4 border-black focus:border-purple-900 focus:outline-none font-bold"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-red-500 to-yellow-400 text-black font-black py-4 rounded-2xl hover:shadow-2xl transform hover:scale-105 transition duration-300 comic-border text-lg">
+                        SEND MESSAGE 🚀
+                    </button>
+                </form>
+            </div>
+
+            <div class="mt-12 grid md:grid-cols-3 gap-6">
+                <div class="bg-blue-300 p-6 border-4 border-black rounded-3xl text-center comic-panel comic-border">
+                    <div class="text-5xl mb-2">📍</div>
+                    <p class="font-black text-blue-900 text-lg">123 LEARNING STREET<br>EDUCATION CITY</p>
+                </div>
+                <div class="bg-yellow-300 p-6 border-4 border-black rounded-3xl text-center comic-panel comic-border">
+                    <div class="text-5xl mb-2">📞</div>
+                    <p class="font-black text-yellow-900 text-lg">+1 (800) 123-4567<br>CALL ANYTIME!</p>
+                </div>
+                <div class="bg-green-300 p-6 border-4 border-black rounded-3xl text-center comic-panel comic-border">
+                    <div class="text-5xl mb-2">⏰</div>
+                    <p class="font-black text-green-900 text-lg">MON-FRI: 9AM-6PM<br>SAT: 10AM-4PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-purple-700 to-pink-700 text-white py-8 px-4 border-t-4 border-black">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="mb-4 text-4xl font-black comic-title">✨ LEARNING WIZARDS ✨</div>
+            <p class="mb-4 text-lg font-bold">Transforming English into MAGICAL ADVENTURES! 🧙‍♂️</p>
+            <div class="flex justify-center gap-6 mb-6 font-bold text-lg">
+                <a href="#" class="hover:text-yellow-300 transition hover:scale-110">📘 Facebook</a>
+                <a href="#" class="hover:text-yellow-300 transition hover:scale-110">📷 Instagram</a>
+                <a href="#" class="hover:text-yellow-300 transition hover:scale-110">🐦 Twitter</a>
+                <a href="#" class="hover:text-yellow-300 transition hover:scale-110">📺 YouTube</a>
+            </div>
+            <p class="text-sm font-bold">© 2024 Learning Wizards. All rights reserved. CAST YOUR SPELL! 🧙‍♀️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
